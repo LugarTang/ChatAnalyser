@@ -1,15 +1,23 @@
 # ChatAnalyser
+
 This tool is used to calculate some indices from WeChat chat log.
+
 ## Method
+
 Considering that people are inclined to send many messages at one time instead of separating them by commas, we join all messages whose time interval is within a given argument `longest_pause`.
+
 ## Indices
+
 1. Average response time.
 2. Average response length.
 3. Pure non-text reply frequency, which indicates how often a user wanted to end this conversation.
+
 ## Usage
+
 1. Choose the conversation you want to analyse in WeChat and export it as emails.
 
-   You'll get a log like this:(Empty line deleted)
+   You'll get a log like this:(Empty line deleted. You don't need to do that.)
+
    ```
    y 17:06
    我不喜欢看
@@ -30,5 +38,6 @@ Considering that people are inclined to send many messages at one time instead o
    m 17:21
    你等着吧 晚上我就写出来
    ```
-3. Copy that into `conversation.txt` in the same directory of `chatanalyser.exe`.
-4. Run `chatanalyser.exe`.
+2. Copy that into `conversation.txt` in the same directory of `chatanalyser.py`.
+3. Run `chatanalyser.py`.
+4. The result will be in `output.txt`.
